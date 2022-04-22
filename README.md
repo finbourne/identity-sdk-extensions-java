@@ -1,12 +1,12 @@
 ![LUSID_by_Finbourne](https://content.finbourne.com/LUSID_repo.png)
 
-# LUSID<sup>®</sup> Drive Java SDK Extensions
+# LUSID<sup>®</sup> Identity Java SDK Extensions
 
-These are the Java SDK Extensions to accompany the [Java SDK (Preview) for the Drive application](https://github.com/finbourne/drive-sdk-java-preview).
+These are the Java SDK Extensions to accompany the [Java SDK (Preview) for the Identity application](https://github.com/finbourne/identity-sdk-java-preview).
 
 This extensions package provides the user with additional extensions to make it easy to configure and use the API endpoints. 
 
-The Drive application is part of the [LUSID by FINBOURNE](https://www.finbourne.com/lusid-technology) platform. To use it you'll need a LUSID account. [Sign up for free at lusid.com](https://www.lusid.com/app/signup).
+The Identity application is part of the [LUSID by FINBOURNE](https://www.finbourne.com/lusid-technology) platform. To use it you'll need a LUSID account. [Sign up for free at lusid.com](https://www.lusid.com/app/signup).
 
 For more details on other applications in the LUSID platform, see [Understanding all the applications in the LUSID platform](https://support.lusid.com/knowledgebase/article/KA-01787/en-us).
 
@@ -28,7 +28,7 @@ Maven artifacts can be downloaded from the Open Source Software Repository Hosti
   <dependencies>
     <dependency>
       <groupId>com.finbourne</groupId>
-      <artifactId>drive-sdk-extensions</artifactId>
+      <artifactId>identity-sdk-extensions</artifactId>
       <version>{INSERT VERSION}</version>
     </dependency>
     ...
