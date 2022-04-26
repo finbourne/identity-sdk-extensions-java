@@ -46,7 +46,7 @@ public class ApiClientBuilder {
 
         if (finbourneToken.getAccessToken() == null) {
             throw new FinbourneTokenException("Cannot construct an API client with a null authorisation header. Ensure " +
-                    "lusid token generated is valid");
+                    "FINBOURNE token generated is valid");
         } else {
             apiClient.addDefaultHeader("Authorization", "Bearer " + finbourneToken.getAccessToken());
         }
