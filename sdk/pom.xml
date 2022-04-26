@@ -7,7 +7,7 @@
     <name>identity-sdk-extensions</name>
     <version>0.1.328-SNAPSHOT</version>
     <url>https://github.com/finbourne/identity-sdk-extensions-java</url>
-    <description>OpenAPI Java</description>
+    <description>FINBOURNE Notifications SDK Extensions</description>
     <scm>
         <connection>git@github.com:finbourne/identity-sdk-extensions-java.git</connection>
         <developerConnection>git@github.com:finbourne/identity-sdk-extensions-java.git</developerConnection>
@@ -264,7 +264,7 @@
         <dependency>
             <groupId>com.finbourne</groupId>
             <artifactId>identity-sdk-preview</artifactId>
-            <version>-20220422.133936-2</version>
+            <version>0.0.1598-20220426.084630-1</version>
         </dependency>
 
         <!-- HTTP client: jersey-client -->

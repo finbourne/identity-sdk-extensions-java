@@ -29,7 +29,6 @@ public class ApiFactoryTest {
     }
 
     // General Cases
-
     @Test
     public void build_ForRolesApi_ReturnRolesApi(){
         RolesApi rolesApi = apiFactory.build(RolesApi.class);
