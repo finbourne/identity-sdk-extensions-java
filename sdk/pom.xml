@@ -7,7 +7,7 @@
     <name>identity-sdk-extensions</name>
     <version>0.1.328-SNAPSHOT</version>
     <url>https://github.com/finbourne/identity-sdk-extensions-java</url>
-    <description>FINBOURNE Notifications SDK Extensions</description>
+    <description>FINBOURNE Identity SDK Extensions</description>
     <scm>
         <connection>git@github.com:finbourne/identity-sdk-extensions-java.git</connection>
         <developerConnection>git@github.com:finbourne/identity-sdk-extensions-java.git</developerConnection>
