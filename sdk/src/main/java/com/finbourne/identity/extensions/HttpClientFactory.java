@@ -7,18 +7,18 @@ import java.net.InetSocketAddress;
 import java.net.Proxy;
 
 /**
- * Builds http client to communicate to Identity API instances.
- *
- */
+* Builds http client to communicate to identity API instances.
+*
+*/
 public class HttpClientFactory {
 
     /**
-     *  Builds a {@link OkHttpClient} from a {@link ApiConfiguration} to make
-     *  calls to the Identity API.
-     *
-     * @param apiConfiguration configuration to connect to Identity API
-     * @return an client for http calls to Identity API
-     */
+    *  Builds a {@link OkHttpClient} from a {@link ApiConfiguration} to make
+    *  calls to the identity API.
+    *
+    * @param apiConfiguration configuration to connect to identity API
+    * @return an client for http calls to identity API
+    */
     public OkHttpClient build(ApiConfiguration apiConfiguration){
         final OkHttpClient httpClient;
 
@@ -34,8 +34,8 @@ public class HttpClientFactory {
                         return response.request().newBuilder()
                                 .header("Proxy-Authorization", credential)
                                 .build();
-                    })
-                    .build();
+            })
+            .build();
         }
         else {
             httpClient = new OkHttpClient();

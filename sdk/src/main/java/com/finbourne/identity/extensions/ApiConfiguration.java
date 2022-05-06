@@ -32,7 +32,7 @@ public class ApiConfiguration {
     private String clientSecret;
 
     /**
-     * Identity API Url
+     * identity API Url
      */
     private String apiUrl;
 

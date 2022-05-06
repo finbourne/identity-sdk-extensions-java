@@ -15,7 +15,7 @@ import java.util.Optional;
 
 /**
  * Provides {@link FinbourneToken} used for API authentication by directly querying the authentication
- * token urls on the target Identity instance. Always provides REFRESHable tokens (see
+ * token urls on the target identity instance. Always provides REFRESHable tokens (see
  * https://support.finbourne.com/using-a-refresh-token).
  *
  */
@@ -44,7 +44,7 @@ public class HttpFinbourneTokenProvider {
      * is available. Otherwise will attempt to refresh the token.
      *
      * @param refreshToken - to attempt token refresh with it is available.
-     * @return an authenticated finbourne token
+     * @return an authenticated Finbourne token
      *
      * @throws FinbourneTokenException on failing to authenticate and retrieve a token
      */
@@ -64,7 +64,7 @@ public class HttpFinbourneTokenProvider {
         }
 
         if (response.code() != 200) {
-            throw new FinbourneTokenException("Authentication call to Identity failed. See response :" + response.toString());
+            throw new FinbourneTokenException("Authentication call to identity failed. See response :" + response.toString());
         }
 
         final String content;
@@ -75,19 +75,19 @@ public class HttpFinbourneTokenProvider {
             mapper = new ObjectMapper();
             bodyValues = mapper.readValue(content, Map.class);
         } catch (IOException e) {
-            throw new FinbourneTokenException("Failed to correctly map the authentication response from Identity. See details : ", e);
+            throw new FinbourneTokenException("Failed to correctly map the authentication response from identity. See details : ", e);
         }
 
         if (!bodyValues.containsKey("access_token")) {
-            throw new FinbourneTokenException("Response from Identity authentication is missing an access_token entry");
+            throw new FinbourneTokenException("Response from identity authentication is missing an access_token entry");
         }
 
         if (!bodyValues.containsKey("refresh_token")) {
-            throw new FinbourneTokenException("Response from Identity authentication is missing an refresh_token entry");
+            throw new FinbourneTokenException("Response from identity authentication is missing an refresh_token entry");
         }
 
         if (!bodyValues.containsKey("expires_in")) {
-            throw new FinbourneTokenException("Response from Identity authentication is missing an expires_in entry");
+            throw new FinbourneTokenException("Response from identity authentication is missing an expires_in entry");
         }
 
         //  get access token, refresh token and token expiry
@@ -135,7 +135,7 @@ public class HttpFinbourneTokenProvider {
         return requestBuilder.build();
     }
 
-    LocalDateTime calculateExpiryAtTime(LocalDateTime now, int expires_in){
+    public LocalDateTime calculateExpiryAtTime(LocalDateTime now, int expires_in){
         // expiration is shortened to overcome a race condition where the token is still valid when retrieved from cache but expired when
         // used in an api call
         return now.plusSeconds(expires_in - 30);
