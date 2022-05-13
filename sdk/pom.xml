@@ -5,7 +5,7 @@
     <artifactId>identity-sdk-extensions</artifactId>
     <packaging>jar</packaging>
     <name>identity-sdk-extensions</name>
-    <version>0.14.0-SNAPSHOT</version>
+    <version>0.15.0-SNAPSHOT</version>
     <url>https://github.com/finbourne/identity-sdk-extensions-java</url>
     <description>FINBOURNE Identity SDK Extensions</description>
     <scm>
@@ -401,6 +401,6 @@
         <junit-version>4.13.1</junit-version>
         <hamcrest-version>1.3</hamcrest-version>
         <mockito-version>3.3.3</mockito-version>
-        <identity-sdk-version>0.0.1640-SNAPSHOT</identity-sdk-version>
+        <identity-sdk-version>0.0.1646-SNAPSHOT</identity-sdk-version>
     </properties>
 </project>
