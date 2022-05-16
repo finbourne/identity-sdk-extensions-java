@@ -5,7 +5,7 @@
     <artifactId>identity-sdk-extensions</artifactId>
     <packaging>jar</packaging>
     <name>identity-sdk-extensions</name>
-    <version>0.16.0-SNAPSHOT</version>
+    <version>0.17.0-SNAPSHOT</version>
     <url>https://github.com/finbourne/identity-sdk-extensions-java</url>
     <description>FINBOURNE Identity SDK Extensions</description>
     <scm>
